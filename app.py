@@ -12,7 +12,7 @@ Original file is located at
 
 
 # Load model
-model = joblib.load("random_forest_model.pkl")
+
 
 st.title("Credit Scoring Model")
 
