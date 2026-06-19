@@ -7,11 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1lks3eR0qW3AQUbq7LB4i1aNMzFrc11HD
 """
 
-pip install streamlit
 
-import streamlit as st
-import pandas as pd
-import joblib
+
+
 
 # Load model
 model = joblib.load("random_forest_model.pkl")
