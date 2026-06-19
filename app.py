@@ -14,7 +14,7 @@ Original file is located at
 # Load model
 
 
-st.title("Credit Scoring Model")
+
 
 age = st.number_input("Age", min_value=18, max_value=100)
 income = st.number_input("Annual Income")
