@@ -16,11 +16,11 @@ Original file is located at
 
 
 
-age = st.number_input("Age", min_value=18, max_value=100)
-income = st.number_input("Annual Income")
-debt = st.number_input("Existing Debt")
+age = number_input("Age", min_value=18, max_value=100)
+income = number_input("Annual Income")
+debt = number_input("Existing Debt")
 
-if st.button("Predict"):
+if button("Predict"):
 
     # Create sample input
     sample = pd.DataFrame({
@@ -32,7 +32,7 @@ if st.button("Predict"):
     prediction = model.predict(sample)
 
     if prediction[0] == 1:
-        st.success("Good Credit Risk")
+        success("Good Credit Risk")
     else:
-        st.error("Bad Credit Risk")
+        error("Bad Credit Risk")
 
